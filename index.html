@@ -3,226 +3,181 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sítio Roda D'água</title>
+  <title>Sítio Roda D'água — Do Campo para a Sua Mesa</title>
+  <meta property="og:type"        content="website"/>
+  <meta property="og:title"       content="Sítio Roda D'água 🌿"/>
+  <meta property="og:description" content="Flores, legumes, rosquinhas artesanais e bolos caseiros direto do sítio em Caxambu – MG."/>
+  <meta property="og:image"       content="sitio_capa.png"/>
+  <meta name="description"        content="Flores, legumes, rosquinhas artesanais e bolos caseiros direto do sítio em Caxambu – MG."/>
+  <meta name="theme-color"        content="#2d5016"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --verde: #2d5016;
-      --verde-m: #4a7c2f;
-      --verde-c: #7ab648;
-      --bege: #f5efe0;
-      --bege2: #e8dcc8;
-      --marrom: #8b5e3c;
-      --marrom-c: #c9956a;
-      --branco: #fdfaf4;
+      --verde:#2d5016; --verde-m:#4a7c2f; --verde-c:#7ab648;
+      --bege:#f5efe0; --bege2:#e8dcc8; --marrom:#8b5e3c;
+      --marrom-c:#c9956a; --branco:#fdfaf4;
     }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { font-family:'Lato',sans-serif; background:var(--branco); color:#2c2c2c; }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Lato',sans-serif;background:var(--branco);color:#2c2c2c;}
 
-    /* HEADER */
-    header {
-      background:var(--verde);
-      padding:14px 20px;
-      display:flex; align-items:center; justify-content:space-between;
-      position:sticky; top:0; z-index:100;
-      box-shadow:0 2px 16px rgba(0,0,0,0.35);
-    }
-    .logo { display:flex; align-items:center; gap:10px; }
-    .logo-text { font-family:'Playfair Display',serif; color:var(--bege); font-size:18px; line-height:1.2; }
-    .logo-text span { display:block; font-size:10px; font-family:'Lato',sans-serif; font-weight:300; letter-spacing:2.5px; color:var(--marrom-c); text-transform:uppercase; }
-    .cart-btn { background:var(--verde-c); color:white; border:none; padding:10px 16px; border-radius:30px; cursor:pointer; font-family:'Lato',sans-serif; font-weight:700; font-size:14px; display:flex; align-items:center; gap:8px; transition:background 0.3s; }
-    .cart-btn:hover { background:var(--marrom); }
-    .cart-count { background:white; color:var(--verde); border-radius:50%; width:20px; height:20px; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; }
+    header{background:var(--verde);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,0.35);}
+    .logo{display:flex;align-items:center;gap:10px;}
+    .logo-text{font-family:'Playfair Display',serif;color:var(--bege);font-size:18px;line-height:1.2;}
+    .logo-text span{display:block;font-size:10px;font-family:'Lato',sans-serif;font-weight:300;letter-spacing:2.5px;color:var(--marrom-c);text-transform:uppercase;}
+    .cart-btn{background:var(--verde-c);color:white;border:none;padding:10px 16px;border-radius:30px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;transition:background 0.3s;}
+    .cart-btn:hover{background:var(--marrom);}
+    .cart-count{background:white;color:var(--verde);border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
 
-    /* HERO */
-    .hero { position:relative; height:88vw; max-height:480px; overflow:hidden; }
-    .hero-img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
-    .hero-overlay {
-      position:absolute; inset:0;
-      background:linear-gradient(to bottom, rgba(10,30,5,0.3) 0%, rgba(10,30,5,0.75) 100%);
-      display:flex; flex-direction:column; align-items:center; justify-content:flex-end;
-      padding:28px 20px; text-align:center;
-    }
-    .hero-badge { display:inline-block; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.3); color:var(--bege); padding:5px 16px; border-radius:30px; font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:12px; }
-    .hero h1 { font-family:'Playfair Display',serif; color:white; font-size:clamp(26px,7vw,42px); line-height:1.2; margin-bottom:8px; text-shadow:0 2px 12px rgba(0,0,0,0.4); }
-    .hero h1 em { color:var(--marrom-c); font-style:italic; }
-    .hero p { color:rgba(255,255,255,0.88); font-size:14px; margin-bottom:22px; font-weight:300; }
-    .btn-hero { background:white; color:var(--verde); border:none; padding:12px 30px; border-radius:50px; font-weight:700; font-size:14px; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 16px rgba(0,0,0,0.25); }
-    .btn-hero:hover { background:var(--bege); transform:translateY(-2px); }
+    .hero{position:relative;height:88vw;max-height:480px;overflow:hidden;}
+    .hero-img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,30,5,0.3) 0%,rgba(10,30,5,0.75) 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:28px 20px;text-align:center;}
+    .hero-badge{display:inline-block;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);color:var(--bege);padding:5px 16px;border-radius:30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+    .hero h1{font-family:'Playfair Display',serif;color:white;font-size:clamp(26px,7vw,42px);line-height:1.2;margin-bottom:8px;text-shadow:0 2px 12px rgba(0,0,0,0.4);}
+    .hero h1 em{color:var(--marrom-c);font-style:italic;}
+    .hero p{color:rgba(255,255,255,0.88);font-size:14px;margin-bottom:22px;font-weight:300;}
+    .btn-hero{background:white;color:var(--verde);border:none;padding:12px 30px;border-radius:50px;font-weight:700;font-size:14px;cursor:pointer;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,0,0,0.25);}
+    .btn-hero:hover{background:var(--bege);transform:translateY(-2px);}
 
-    /* SECTION TITLE */
-    .sec-title { text-align:center; padding:40px 20px 8px; }
-    .sec-title h2 { font-family:'Playfair Display',serif; font-size:26px; color:var(--verde); }
-    .divider { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:8px; }
-    .divider::before,.divider::after { content:''; width:50px; height:1px; background:var(--marrom-c); }
-    .divider span { color:var(--verde-c); font-size:16px; }
+    .sec-title{text-align:center;padding:40px 20px 8px;}
+    .sec-title h2{font-family:'Playfair Display',serif;font-size:26px;color:var(--verde);}
+    .divider{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;}
+    .divider::before,.divider::after{content:'';width:50px;height:1px;background:var(--marrom-c);}
+    .divider span{color:var(--verde-c);font-size:16px;}
 
-    /* CATEGORIES GRID 2x2 */
-    .cat-grid {
-      display:grid;
-      grid-template-columns:1fr 1fr 1fr 1fr;
-      gap:10px;
-      max-width:860px;
-      margin:16px auto 0;
-      padding:0 16px;
-    }
+    .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:860px;margin:16px auto 0;padding:0 16px;}
+    @media(max-width:400px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
+    .cat-block{border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.3s,box-shadow 0.3s;}
+    .cat-block:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(0,0,0,0.17);}
+    .cat-block.open{outline:3px solid var(--verde-c);box-shadow:0 8px 24px rgba(0,0,0,0.2);}
+    .cat-header{position:relative;height:110px;overflow:hidden;}
+    .cat-header img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;}
+    .cat-block.open .cat-header img,.cat-block:hover .cat-header img{transform:scale(1.05);}
+    .cat-header-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,30,5,0.05) 0%,rgba(10,30,5,0.75) 100%);display:flex;align-items:flex-end;justify-content:center;padding:10px 10px 12px;}
+    .cat-name{font-family:'Playfair Display',serif;color:white;font-size:13px;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.5);}
 
-    .cat-block {
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 4px 14px rgba(0,0,0,0.1);
-      cursor:pointer;
-      transition:transform 0.3s, box-shadow 0.3s;
-    }
-    .cat-block:hover { transform:translateY(-3px); box-shadow:0 8px 22px rgba(0,0,0,0.17); }
-    .cat-block.open { outline:3px solid var(--verde-c); box-shadow:0 8px 24px rgba(0,0,0,0.2); }
+    .products-panel{max-width:860px;margin:0 auto;padding:0 16px;overflow:hidden;max-height:0;transition:max-height 0.45s cubic-bezier(0.25,0.46,0.45,0.94);}
+    .products-panel.open{max-height:1600px;}
+    .products-panel-inner{background:white;border-radius:0 0 18px 18px;border:1.5px solid var(--bege2);border-top:none;padding:16px;margin-bottom:24px;}
+    .panel-header{display:flex;align-items:center;gap:8px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--bege2);}
+    .panel-header span{font-size:22px;}
+    .panel-header h3{font-family:'Playfair Display',serif;font-size:18px;color:var(--verde);}
+    .products-inner{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    .product-card{background:var(--branco);border:1.5px solid var(--bege2);border-radius:14px;overflow:hidden;transition:transform 0.25s,box-shadow 0.25s;}
+    .product-card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,0.1);}
+    .product-emoji-box{height:80px;display:flex;align-items:center;justify-content:center;font-size:44px;}
+    .avail-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;margin-bottom:4px;}
+    .avail-ok{background:#e8f5e9;color:#2d6a2d;}
+    .avail-low{background:#fff3e0;color:#b85c00;}
+    .avail-out{background:#fbe9e7;color:#b71c1c;}
+    .product-info{padding:8px 12px 12px;}
+    .product-name{font-family:'Playfair Display',serif;font-size:13px;color:var(--verde);margin-bottom:4px;line-height:1.3;}
+    .product-price{color:var(--marrom);font-weight:700;font-size:15px;margin-bottom:8px;}
+    .qty-selector{display:flex;align-items:center;border:1.5px solid var(--bege2);border-radius:9px;overflow:hidden;margin-bottom:8px;width:100%;}
+    .qty-selector button{background:var(--bege);border:none;color:var(--verde);font-size:18px;font-weight:700;cursor:pointer;width:36px;height:34px;flex-shrink:0;transition:background 0.2s;}
+    .qty-selector button:hover{background:var(--bege2);}
+    .qty-selector input{flex:1;border:none;background:white;text-align:center;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;color:var(--verde);width:0;min-width:0;}
+    .qty-selector input:focus{outline:none;}
+    .add-btn{width:100%;background:var(--verde-m);color:white;border:none;padding:8px;border-radius:9px;font-family:'Lato',sans-serif;font-weight:700;font-size:13px;cursor:pointer;transition:background 0.25s;}
+    .add-btn:hover{background:var(--verde);}
+    .add-btn.added{background:var(--marrom);}
+    .add-btn:disabled{background:#ccc;cursor:not-allowed;}
 
-    .cat-header {
-      position:relative;
-      height:110px;
-      overflow:hidden;
-    }
-    .cat-header img {
-      width:100%; height:100%;
-      object-fit:cover; display:block;
-      transition:transform 0.4s;
-    }
-    .cat-block.open .cat-header img,
-    .cat-block:hover .cat-header img { transform:scale(1.05); }
+    /* ── DEPOIMENTOS ── */
+    .depoimentos{background:var(--bege);padding:48px 20px;}
+    .dep-inner{max-width:860px;margin:0 auto;}
+    .dep-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;}
+    @media(max-width:480px){.dep-grid{grid-template-columns:1fr;}}
+    .dep-card{background:white;border-radius:16px;padding:20px;border:1.5px solid var(--bege2);box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+    .dep-stars{color:#f5a623;font-size:16px;margin-bottom:8px;}
+    .dep-text{font-size:14px;color:#555;line-height:1.7;font-style:italic;margin-bottom:12px;}
+    .dep-author{display:flex;align-items:center;gap:10px;}
+    .dep-avatar{width:36px;height:36px;border-radius:50%;background:var(--verde-c);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0;}
+    .dep-name{font-weight:700;font-size:13px;color:var(--verde);}
+    .dep-local{font-size:11px;color:#999;}
+    .dep-loading{text-align:center;padding:32px;color:#aaa;font-size:14px;}
 
-    .cat-header-overlay {
-      position:absolute; inset:0;
-      background:linear-gradient(to bottom, rgba(10,30,5,0.05) 0%, rgba(10,30,5,0.75) 100%);
-      display:flex; align-items:flex-end; justify-content:center;
-      padding:10px 10px 12px;
-    }
-    .cat-name {
-      font-family:'Playfair Display',serif;
-      color:white;
-      font-size:13px;
-      text-align:center;
-      text-shadow:0 1px 6px rgba(0,0,0,0.5);
-    }
+    /* ── FORMULÁRIO DE DEPOIMENTO ── */
+    .review-form-wrap{max-width:560px;margin:28px auto 0;background:white;border-radius:18px;border:1.5px solid var(--bege2);padding:24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
+    .review-form-wrap h3{font-family:'Playfair Display',serif;color:var(--verde);font-size:18px;margin-bottom:4px;}
+    .review-form-wrap p{font-size:13px;color:#888;margin-bottom:16px;}
+    .rf-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+    @media(max-width:400px){.rf-row{grid-template-columns:1fr;}}
+    .rf-field{display:flex;flex-direction:column;gap:4px;}
+    .rf-field label{font-size:12px;font-weight:700;color:var(--verde);text-transform:uppercase;letter-spacing:0.8px;}
+    .rf-field input,.rf-field textarea{border:1.5px solid var(--bege2);border-radius:9px;padding:10px 12px;font-family:'Lato',sans-serif;font-size:14px;color:#333;background:var(--branco);transition:border 0.2s;}
+    .rf-field input:focus,.rf-field textarea:focus{outline:none;border-color:var(--verde-c);}
+    .rf-field textarea{resize:vertical;min-height:80px;}
+    .star-select{display:flex;gap:6px;margin-top:4px;}
+    .star-select span{font-size:26px;cursor:pointer;opacity:0.35;transition:opacity 0.15s,transform 0.15s;}
+    .star-select span.active{opacity:1;}
+    .star-select span:hover{transform:scale(1.2);}
+    .rf-submit{width:100%;background:var(--verde-m);color:white;border:none;padding:12px;border-radius:11px;font-family:'Lato',sans-serif;font-weight:700;font-size:14px;cursor:pointer;margin-top:14px;transition:background 0.25s;display:flex;align-items:center;justify-content:center;gap:8px;}
+    .rf-submit:hover{background:var(--verde);}
+    .rf-submit:disabled{background:#aaa;cursor:not-allowed;}
+    .rf-success{text-align:center;padding:20px;color:var(--verde);font-weight:700;font-size:15px;display:none;}
 
-    /* Products panel below the grid */
-    .products-panel {
-      max-width:860px;
-      margin:0 auto;
-      padding:0 16px;
-      overflow:hidden;
-      max-height:0;
-      transition:max-height 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
-    }
-    .products-panel.open { max-height:1400px; }
+    .sobre{padding:48px 20px;}
+    .sobre-inner{max-width:600px;margin:0 auto;text-align:center;}
+    .sobre-icon{font-size:52px;margin-bottom:16px;}
+    .sobre h2{font-family:'Playfair Display',serif;font-size:26px;color:var(--verde);margin-bottom:16px;}
+    .sobre p{color:#555;font-size:15px;line-height:1.8;margin-bottom:12px;}
+    .sobre-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px;}
+    .sobre-tag{background:var(--bege);border:1.5px solid var(--bege2);color:var(--verde);padding:7px 16px;border-radius:30px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;}
 
-    .products-panel-inner {
-      background:white;
-      border-radius:0 0 18px 18px;
-      border:1.5px solid var(--bege2);
-      border-top:none;
-      padding:16px;
-      margin-bottom:24px;
-    }
+    .como{background:var(--bege);padding:40px 20px;text-align:center;}
+    .steps{display:flex;justify-content:center;gap:8px;margin-top:24px;flex-wrap:wrap;}
+    .step{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;min-width:65px;}
+    .step-icon{width:52px;height:52px;background:var(--verde);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;}
+    .step p{font-size:11px;color:var(--verde);font-weight:700;line-height:1.3;}
+    .step-arrow{color:var(--marrom-c);font-size:18px;align-self:center;margin-top:-16px;}
+    .entrega-info{max-width:560px;margin:28px auto 0;background:white;border-radius:16px;border:1.5px solid var(--bege2);padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;}
+    .ei-item{display:flex;gap:10px;align-items:flex-start;}
+    .ei-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+    .ei-label{font-size:11px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
+    .ei-val{font-size:13px;color:var(--verde);font-weight:700;margin-top:2px;line-height:1.4;}
+    @media(max-width:400px){.entrega-info{grid-template-columns:1fr;}}
 
-    .panel-header {
-      display:flex; align-items:center; gap:8px;
-      margin-bottom:14px;
-      padding-bottom:10px;
-      border-bottom:1px solid var(--bege2);
-    }
-    .panel-header span { font-size:22px; }
-    .panel-header h3 { font-family:'Playfair Display',serif; font-size:18px; color:var(--verde); }
+    .banner{background:var(--verde);padding:40px 20px;text-align:center;}
+    .banner h2{font-family:'Playfair Display',serif;color:white;font-size:24px;margin-bottom:8px;}
+    .banner p{color:rgba(255,255,255,0.7);margin-bottom:22px;font-size:14px;}
+    .wa-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;padding:13px 26px;border-radius:50px;font-weight:700;font-size:15px;border:none;cursor:pointer;transition:background 0.3s;}
+    .wa-btn:hover{background:#128C7E;}
 
-    .products-inner {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
+    footer{background:#1a2f0a;padding:20px;text-align:center;color:rgba(255,255,255,0.45);font-size:12px;line-height:1.8;}
+    footer a{color:var(--verde-c);text-decoration:none;}
 
-    .product-card {
-      background:var(--branco);
-      border:1.5px solid var(--bege2);
-      border-radius:14px;
-      overflow:hidden;
-      transition:transform 0.25s, box-shadow 0.25s;
-    }
-    .product-card:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.1); }
-    .product-emoji-box {
-      height:90px;
-      display:flex; align-items:center; justify-content:center;
-      font-size:50px;
-    }
-    .product-info { padding:10px 12px 12px; }
-    .product-name { font-family:'Playfair Display',serif; font-size:13px; color:var(--verde); margin-bottom:3px; line-height:1.3; }
-    .product-price { color:var(--marrom); font-weight:700; font-size:15px; margin-bottom:8px; }
-    .add-btn { width:100%; background:var(--verde-m); color:white; border:none; padding:8px; border-radius:9px; font-family:'Lato',sans-serif; font-weight:700; font-size:13px; cursor:pointer; transition:background 0.25s; }
-    .add-btn:hover { background:var(--verde); }
-    .add-btn.added { background:var(--marrom); }
-
-    /* SOBRE NÓS */
-    .sobre { background:var(--bege); padding:48px 20px; }
-    .sobre-inner { max-width:600px; margin:0 auto; text-align:center; }
-    .sobre-icon { font-size:52px; margin-bottom:16px; }
-    .sobre h2 { font-family:'Playfair Display',serif; font-size:26px; color:var(--verde); margin-bottom:16px; }
-    .sobre p { color:#555; font-size:15px; line-height:1.8; margin-bottom:12px; }
-    .sobre-tags { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:24px; }
-    .sobre-tag { background:white; border:1.5px solid var(--bege2); color:var(--verde); padding:7px 16px; border-radius:30px; font-size:13px; font-weight:700; display:flex; align-items:center; gap:6px; }
-
-    /* COMO FUNCIONA */
-    .como { padding:40px 20px; text-align:center; }
-    .steps { display:flex; justify-content:center; gap:8px; margin-top:24px; flex-wrap:wrap; }
-    .step { display:flex; flex-direction:column; align-items:center; gap:8px; flex:1; min-width:65px; }
-    .step-icon { width:52px; height:52px; background:var(--verde); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; }
-    .step p { font-size:11px; color:var(--verde); font-weight:700; line-height:1.3; }
-    .step-arrow { color:var(--marrom-c); font-size:18px; align-self:center; margin-top:-16px; }
-
-    /* BANNER */
-    .banner { background:var(--verde); padding:40px 20px; text-align:center; }
-    .banner h2 { font-family:'Playfair Display',serif; color:white; font-size:24px; margin-bottom:8px; }
-    .banner p { color:rgba(255,255,255,0.7); margin-bottom:22px; font-size:14px; }
-    .wa-btn { display:inline-flex; align-items:center; gap:10px; background:#25D366; color:white; padding:13px 26px; border-radius:50px; font-weight:700; font-size:15px; border:none; cursor:pointer; transition:background 0.3s; }
-    .wa-btn:hover { background:#128C7E; }
-
-    /* FOOTER */
-    footer { background:#1a2f0a; padding:20px; text-align:center; color:rgba(255,255,255,0.45); font-size:12px; line-height:1.8; }
-    footer a { color:var(--verde-c); text-decoration:none; }
-
-    /* CART DRAWER */
-    .overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:200; }
-    .overlay.open { display:block; }
-    .drawer { position:fixed; right:-100%; top:0; bottom:0; width:min(360px,100%); background:var(--branco); z-index:300; display:flex; flex-direction:column; transition:right 0.4s cubic-bezier(0.25,0.46,0.45,0.94); box-shadow:-4px 0 30px rgba(0,0,0,0.15); }
-    .drawer.open { right:0; }
-    .drawer-head { background:var(--verde); color:white; padding:20px; display:flex; align-items:center; justify-content:space-between; }
-    .drawer-head h3 { font-family:'Playfair Display',serif; font-size:20px; }
-    .close-btn { background:none; border:none; color:white; font-size:24px; cursor:pointer; }
-    .drawer-items { flex:1; overflow-y:auto; padding:16px; }
-    .cart-empty { text-align:center; padding:48px 20px; color:#aaa; }
-    .cart-empty span { font-size:44px; display:block; margin-bottom:10px; }
-    .cart-item { display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--bege2); }
-    .ci-emoji { font-size:26px; }
-    .ci-info { flex:1; }
-    .ci-name { font-weight:700; font-size:14px; color:var(--verde); }
-    .ci-price { font-size:13px; color:var(--marrom); }
-    .ci-ctrl { display:flex; align-items:center; gap:8px; }
-    .qty-btn { width:28px; height:28px; border-radius:50%; border:2px solid var(--verde-m); background:none; color:var(--verde); font-size:16px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.2s; }
-    .qty-btn:hover { background:var(--verde-m); color:white; }
-    .qty-n { font-weight:700; font-size:15px; min-width:20px; text-align:center; }
-    .drawer-foot { padding:16px 20px 24px; border-top:2px solid var(--bege2); }
-    .cart-total { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
-    .cart-total span:first-child { font-size:15px; color:#666; }
-    .cart-total span:last-child { font-family:'Playfair Display',serif; font-size:22px; color:var(--verde); font-weight:700; }
-    .finalizar-btn { width:100%; background:#25D366; color:white; border:none; padding:15px; border-radius:13px; font-family:'Lato',sans-serif; font-weight:700; font-size:15px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; transition:background 0.3s; }
-    .finalizar-btn:hover { background:#128C7E; }
-
-    /* TOAST */
-    .toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(80px); background:var(--verde); color:white; padding:11px 22px; border-radius:30px; font-size:14px; font-weight:700; z-index:999; transition:transform 0.3s; pointer-events:none; white-space:nowrap; }
-    .toast.show { transform:translateX(-50%) translateY(0); }
+    .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;}
+    .overlay.open{display:block;}
+    .drawer{position:fixed;right:-100%;top:0;bottom:0;width:min(360px,100%);background:var(--branco);z-index:300;display:flex;flex-direction:column;transition:right 0.4s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:-4px 0 30px rgba(0,0,0,0.15);}
+    .drawer.open{right:0;}
+    .drawer-head{background:var(--verde);color:white;padding:20px;display:flex;align-items:center;justify-content:space-between;}
+    .drawer-head h3{font-family:'Playfair Display',serif;font-size:20px;}
+    .close-btn{background:none;border:none;color:white;font-size:24px;cursor:pointer;}
+    .drawer-items{flex:1;overflow-y:auto;padding:16px;}
+    .cart-empty{text-align:center;padding:48px 20px;color:#aaa;}
+    .cart-empty span{font-size:44px;display:block;margin-bottom:10px;}
+    .cart-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--bege2);}
+    .ci-emoji{font-size:26px;}
+    .ci-info{flex:1;}
+    .ci-name{font-weight:700;font-size:14px;color:var(--verde);}
+    .ci-price{font-size:13px;color:var(--marrom);}
+    .ci-ctrl{display:flex;align-items:center;gap:8px;}
+    .qty-btn{width:28px;height:28px;border-radius:50%;border:2px solid var(--verde-m);background:none;color:var(--verde);font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+    .qty-btn:hover{background:var(--verde-m);color:white;}
+    .qty-n{font-weight:700;font-size:15px;min-width:20px;text-align:center;}
+    .drawer-foot{padding:16px 20px 24px;border-top:2px solid var(--bege2);}
+    .cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+    .cart-total span:first-child{font-size:15px;color:#666;}
+    .cart-total span:last-child{font-family:'Playfair Display',serif;font-size:22px;color:var(--verde);font-weight:700;}
+    .finalizar-btn{width:100%;background:#25D366;color:white;border:none;padding:15px;border-radius:13px;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s;}
+    .finalizar-btn:hover{background:#128C7E;}
+    .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--verde);color:white;padding:11px 22px;border-radius:30px;font-size:14px;font-weight:700;z-index:999;transition:transform 0.3s;pointer-events:none;white-space:nowrap;}
+    .toast.show{transform:translateX(-50%) translateY(0);}
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo">
     <span style="font-size:26px">🌿</span>
@@ -233,53 +188,41 @@
   </button>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <img class="hero-img" src="sitio_capa.png" alt="Sítio Roda D'água"/>
   <div class="hero-overlay">
     <div class="hero-badge">🌱 Direto do Sítio para Você</div>
     <h1>Sabor que vem da <em>terra,</em><br>feito com amor</h1>
     <p>Flores, legumes, rosquinhas artesanais e bolos caseiros</p>
-    <button class="btn-hero" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">Ver Produtos</button>
+    <button class="btn-hero" onclick="document.getElementById('cardapio').scrollIntoView({behavior:'smooth'})">Ver o Cardápio</button>
   </div>
 </section>
 
-<!-- PRODUTOS -->
-<div class="sec-title" id="produtos">
+<div class="sec-title" id="cardapio">
   <h2>Nossos Produtos</h2>
   <div class="divider"><span>🌿</span></div>
 </div>
 <p style="text-align:center;color:#999;font-size:13px;padding:4px 16px 0">Toque em uma categoria para ver os itens</p>
 
-<!-- 4 CARDS LADO A LADO (2x2) -->
 <div class="cat-grid">
   <div class="cat-block" id="block-flores" onclick="toggleCat('flores')">
-    <div class="cat-header">
-      <img src="flores.png" alt="Flores"/>
-      <div class="cat-header-overlay"><div class="cat-name">🌸 Flores</div></div>
-    </div>
+    <div class="cat-header"><img src="flores.png" alt="Flores"/>
+      <div class="cat-header-overlay"><div class="cat-name">🌸 Flores</div></div></div>
   </div>
   <div class="cat-block" id="block-legumes" onclick="toggleCat('legumes')">
-    <div class="cat-header">
-      <img src="vegetais.png" alt="Legumes"/>
-      <div class="cat-header-overlay"><div class="cat-name">🥬 Legumes</div></div>
-    </div>
+    <div class="cat-header"><img src="vegetais.png" alt="Legumes"/>
+      <div class="cat-header-overlay"><div class="cat-name">🥬 Legumes</div></div></div>
   </div>
   <div class="cat-block" id="block-rosquinhas" onclick="toggleCat('rosquinhas')">
-    <div class="cat-header">
-      <img src="rosquinhas.png" alt="Rosquinhas"/>
-      <div class="cat-header-overlay"><div class="cat-name">🍪 Rosquinhas</div></div>
-    </div>
+    <div class="cat-header"><img src="rosquinhas.png" alt="Rosquinhas"/>
+      <div class="cat-header-overlay"><div class="cat-name">🍪 Rosquinhas</div></div></div>
   </div>
   <div class="cat-block" id="block-bolos" onclick="toggleCat('bolos')">
-    <div class="cat-header">
-      <img src="bolos.png" alt="Bolos"/>
-      <div class="cat-header-overlay"><div class="cat-name">🎂 Bolos</div></div>
-    </div>
+    <div class="cat-header"><img src="bolos.png" alt="Bolos"/>
+      <div class="cat-header-overlay"><div class="cat-name">🎂 Bolos</div></div></div>
   </div>
 </div>
 
-<!-- PRODUTOS (aparece abaixo dos 4 cards) -->
 <div class="products-panel" id="productsPanel">
   <div class="products-panel-inner">
     <div class="panel-header">
@@ -290,7 +233,52 @@
   </div>
 </div>
 
-<!-- SOBRE NÓS -->
+<!-- DEPOIMENTOS -->
+<section class="depoimentos" id="depoimentos">
+  <div class="dep-inner">
+    <div class="sec-title" style="padding-top:0">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="divider"><span>💚</span></div>
+    </div>
+
+    <div class="dep-grid" id="depGrid">
+      <div class="dep-loading">🌿 Carregando depoimentos...</div>
+    </div>
+
+    <!-- Formulário para enviar depoimento -->
+    <div class="review-form-wrap">
+      <h3>✍️ Deixe seu depoimento</h3>
+      <p>Conte como foi sua experiência com o Sítio Roda D'água!</p>
+      <div class="rf-row">
+        <div class="rf-field">
+          <label>Seu nome</label>
+          <input type="text" id="rf-name" placeholder="Ex: Maria S." maxlength="40"/>
+        </div>
+        <div class="rf-field">
+          <label>Cidade</label>
+          <input type="text" id="rf-city" placeholder="Ex: Caxambu – MG" maxlength="40"/>
+        </div>
+      </div>
+      <div class="rf-field" style="margin-bottom:10px">
+        <label>Nota</label>
+        <div class="star-select" id="starSelect">
+          <span data-v="1">⭐</span>
+          <span data-v="2">⭐</span>
+          <span data-v="3">⭐</span>
+          <span data-v="4">⭐</span>
+          <span data-v="5">⭐</span>
+        </div>
+      </div>
+      <div class="rf-field">
+        <label>Comentário</label>
+        <textarea id="rf-comment" placeholder="Conte sua experiência..." maxlength="300"></textarea>
+      </div>
+      <button class="rf-submit" id="rfBtn" onclick="submitReview()">💚 Enviar Depoimento</button>
+      <div class="rf-success" id="rfSuccess">✅ Depoimento enviado! Obrigado(a) 🌿</div>
+    </div>
+  </div>
+</section>
+
 <section class="sobre" id="sobre">
   <div class="sobre-inner">
     <div class="sobre-icon">🌾</div>
@@ -308,7 +296,6 @@
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
 <section class="como">
   <div class="sec-title" style="padding-top:0">
     <h2>Como Funciona?</h2>
@@ -317,15 +304,20 @@
   <div class="steps">
     <div class="step"><div class="step-icon">📱</div><p>Escaneie o QR Code</p></div>
     <div class="step-arrow">→</div>
-    <div class="step"><div class="step-icon">🛒</div><p>Escolha os produtos</p></div>
+    <div class="step"><div class="step-icon">🛒</div><p>Monte seu pedido</p></div>
     <div class="step-arrow">→</div>
-    <div class="step"><div class="step-icon">💬</div><p>Pedido no WhatsApp</p></div>
+    <div class="step"><div class="step-icon">💬</div><p>Envie pelo WhatsApp</p></div>
     <div class="step-arrow">→</div>
     <div class="step"><div class="step-icon">🚚</div><p>Combine a entrega</p></div>
   </div>
+  <div class="entrega-info">
+    <div class="ei-item"><div class="ei-icon">📅</div><div><div class="ei-label">Dias de entrega</div><div class="ei-val">Terças e Sextas</div></div></div>
+    <div class="ei-item"><div class="ei-icon">⏰</div><div><div class="ei-label">Pedido até</div><div class="ei-val">1 dia antes</div></div></div>
+    <div class="ei-item"><div class="ei-icon">🚚</div><div><div class="ei-label">Frete</div><div class="ei-val">A combinar<br><span style="font-size:11px;font-weight:400;color:#888">Retirada no sítio: grátis</span></div></div></div>
+    <div class="ei-item"><div class="ei-icon">🛍️</div><div><div class="ei-label">Pedido mínimo</div><div class="ei-val">R$ 20,00</div></div></div>
+  </div>
 </section>
 
-<!-- BANNER -->
 <section class="banner">
   <h2>Faça já sua encomenda! 💚</h2>
   <p>Rápido, prático e você apoia quem produz com amor</p>
@@ -335,13 +327,11 @@
   </button>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>🌿 Sítio Roda D'água — Do campo para a sua mesa</p>
   <p><a href="https://wa.me/5535991390223">📱 (35) 99139-0223</a> · Caxambu – MG</p>
 </footer>
 
-<!-- CART DRAWER -->
 <div class="overlay" id="overlay" onclick="closeCart()"></div>
 <div class="drawer" id="drawer">
   <div class="drawer-head">
@@ -363,147 +353,261 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const WA = '5535991390223';
+// ── CONFIG GITHUB ──────────────────────────────
+const GH_TOKEN = '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';
+const GH_REPO  = 'labremotodeivid-coder/Sitio-Roda-D--gua';
+const GH_FILE  = 'js.delivrs/reviews.json';
+const RAW_URL  = `https://raw.githubusercontent.com/${GH_REPO}/main/${GH_FILE}`;
+const API_URL  = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
+const WA       = '5535991390223';
 
+// ── PRODUTOS ───────────────────────────────────
 const products = {
-  flores: [
-    {id:1,  name:'Vaso de Girassol', price:15, emoji:'🌻', bg:'#fff8e1'},
-    {id:2,  name:'Vaso de Lavanda',  price:12, emoji:'💜', bg:'#f3e8ff'},
-    {id:3,  name:'Arranjo Misto',    price:25, emoji:'🌸', bg:'#fce4f0'},
+  flores:[
+    {id:1, name:'Vaso de Girassol', price:15, emoji:'🌻', bg:'#fff8e1', avail:'ok'},
+    {id:2, name:'Vaso de Lavanda',  price:12, emoji:'💜', bg:'#f3e8ff', avail:'low'},
+    {id:3, name:'Arranjo Misto',    price:25, emoji:'🌸', bg:'#fce4f0', avail:'ok'},
   ],
-  legumes: [
-    {id:4,  name:'Alface',    price:4,  emoji:'🥬', bg:'#e8f8e8'},
-    {id:5,  name:'Tomate',    price:6,  emoji:'🍅', bg:'#fdecea'},
-    {id:6,  name:'Cenoura',   price:5,  emoji:'🥕', bg:'#fff3e0'},
-    {id:7,  name:'Abobrinha', price:5,  emoji:'🥒', bg:'#e8f5e9'},
+  legumes:[
+    {id:4, name:'Alface',    price:4, emoji:'🥬', bg:'#e8f8e8', avail:'ok'},
+    {id:5, name:'Tomate',    price:6, emoji:'🍅', bg:'#fdecea', avail:'ok'},
+    {id:6, name:'Cenoura',   price:5, emoji:'🥕', bg:'#fff3e0', avail:'low'},
+    {id:7, name:'Abobrinha', price:5, emoji:'🥒', bg:'#e8f5e9', avail:'out'},
   ],
-  rosquinhas: [
-    {id:8,  name:'Rosquinha de Polvilho', price:12, emoji:'🍩', bg:'#fff8e1'},
-    {id:9,  name:'Rosquinha de Queijo',   price:14, emoji:'🧀', bg:'#fffde7'},
-    {id:10, name:'Rosquinha de Canela',   price:12, emoji:'🍪', bg:'#fbe9e7'},
+  rosquinhas:[
+    {id:8,  name:'Rosquinha de Polvilho', price:12, emoji:'🍩', bg:'#fff8e1', avail:'ok'},
+    {id:9,  name:'Rosquinha de Queijo',   price:14, emoji:'🧀', bg:'#fffde7', avail:'ok'},
+    {id:10, name:'Rosquinha de Canela',   price:12, emoji:'🍪', bg:'#fbe9e7', avail:'low'},
   ],
-  bolos: [
-    {id:11, name:'Bolo de Fubá',   price:30, emoji:'🎂', bg:'#fff8e1'},
-    {id:12, name:'Bolo de Milho',  price:30, emoji:'🌽', bg:'#fffde7'},
-    {id:13, name:'Bolo de Banana', price:28, emoji:'🍌', bg:'#f9fbe7'},
+  bolos:[
+    {id:11, name:'Bolo de Fubá',   price:30, emoji:'🎂', bg:'#fff8e1', avail:'ok'},
+    {id:12, name:'Bolo de Milho',  price:30, emoji:'🌽', bg:'#fffde7', avail:'ok'},
+    {id:13, name:'Bolo de Banana', price:28, emoji:'🍌', bg:'#f9fbe7', avail:'out'},
   ]
 };
-
+const availLabel = {
+  ok: {cls:'avail-ok', txt:'✅ Disponível'},
+  low:{cls:'avail-low',txt:'⚡ Últimas unidades'},
+  out:{cls:'avail-out',txt:'❌ Fora de temporada'},
+};
 const catInfo = {
-  flores:     {title:'Flores',            emoji:'🌸'},
-  legumes:    {title:'Legumes & Verduras', emoji:'🥬'},
-  rosquinhas: {title:'Rosquinhas',         emoji:'🍪'},
-  bolos:      {title:'Bolos',              emoji:'🎂'},
+  flores:    {title:'Flores',            emoji:'🌸'},
+  legumes:   {title:'Legumes & Verduras', emoji:'🥬'},
+  rosquinhas:{title:'Rosquinhas',         emoji:'🍪'},
+  bolos:     {title:'Bolos',              emoji:'🎂'},
 };
 
+// ── CARRINHO ───────────────────────────────────
 let cart = {};
-let openCat = null;
+function saveCart(){ try{ localStorage.setItem('sitio_cart', JSON.stringify(cart)); }catch(e){} }
+function loadCart(){ try{ const r=localStorage.getItem('sitio_cart'); if(r) cart=JSON.parse(r); }catch(e){ cart={}; } }
 
-function toggleCat(cat) {
+// ── CATEGORIAS ─────────────────────────────────
+let openCat = null;
+function toggleCat(cat){
   const panel = document.getElementById('productsPanel');
   const isSame = openCat === cat;
-
-  // Remove active from all cards
-  document.querySelectorAll('.cat-block').forEach(b => b.classList.remove('open'));
-
-  if (isSame) {
-    // Close panel
-    panel.classList.remove('open');
-    openCat = null;
-  } else {
-    // Open this category
-    openCat = cat;
-    document.getElementById('block-' + cat).classList.add('open');
-    document.getElementById('panelEmoji').textContent = catInfo[cat].emoji;
-    document.getElementById('panelTitle').textContent = catInfo[cat].title;
-
-    // Render products
-    document.getElementById('productsGrid').innerHTML = products[cat].map(p => `
-      <div class="product-card">
-        <div class="product-emoji-box" style="background:${p.bg}">${p.emoji}</div>
-        <div class="product-info">
-          <div class="product-name">${p.name}</div>
-          <div class="product-price">R$ ${p.price.toFixed(2).replace('.',',')}</div>
-          <button class="add-btn" id="btn-${p.id}" onclick="addToCart(${p.id},'${cat}')">+ Adicionar</button>
-        </div>
-      </div>`).join('');
-
-    panel.classList.add('open');
-    setTimeout(() => panel.scrollIntoView({behavior:'smooth', block:'nearest'}), 80);
-  }
+  document.querySelectorAll('.cat-block').forEach(b=>b.classList.remove('open'));
+  if(isSame){ panel.classList.remove('open'); openCat=null; return; }
+  openCat = cat;
+  document.getElementById('block-'+cat).classList.add('open');
+  document.getElementById('panelEmoji').textContent = catInfo[cat].emoji;
+  document.getElementById('panelTitle').textContent = catInfo[cat].title;
+  renderProducts(cat);
+  panel.classList.add('open');
+  setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),80);
 }
-
-function addToCart(id, cat) {
-  const p = products[cat].find(p => p.id === id);
-  if (!p) return;
-  if (cart[id]) { cart[id].qty++; } else { cart[id] = {...p, qty:1}; }
-  updateUI();
-  showToast(`${p.emoji} ${p.name} adicionado!`);
-  const btn = document.getElementById('btn-' + id);
-  if (btn) {
-    btn.textContent = '✓ Adicionado!';
-    btn.classList.add('added');
-    setTimeout(() => { btn.textContent = '+ Adicionar'; btn.classList.remove('added'); }, 1200);
-  }
+function renderProducts(cat){
+  document.getElementById('productsGrid').innerHTML = products[cat].map(p=>{
+    const av=availLabel[p.avail], isOut=p.avail==='out';
+    return `<div class="product-card">
+      <div class="product-emoji-box" style="background:${p.bg};opacity:${isOut?0.6:1}">${p.emoji}</div>
+      <div class="product-info">
+        <span class="avail-badge ${av.cls}">${av.txt}</span>
+        <div class="product-name">${p.name}</div>
+        <div class="product-price">R$ ${p.price.toFixed(2).replace('.',',')}</div>
+        ${isOut?'':
+        `<div class="qty-selector">
+          <button onclick="changeQtySelector(${p.id},-1)">−</button>
+          <input type="number" id="qsinput-${p.id}" value="1" min="1" max="99" readonly/>
+          <button onclick="changeQtySelector(${p.id},1)">+</button>
+        </div>`}
+        <button class="add-btn" id="btn-${p.id}" ${isOut?'disabled':''} onclick="addToCart(${p.id},'${cat}')">
+          ${isOut?'🚫 Indisponível':'+ Adicionar ao Carrinho'}
+        </button>
+      </div></div>`;
+  }).join('');
 }
-
-function fmt(v) { return 'R$ ' + v.toFixed(2).replace('.',','); }
-
-function updateUI() {
-  const entries = Object.values(cart).filter(i => i.qty > 0);
-  const total = entries.reduce((s,i) => s + i.price * i.qty, 0);
-  const count = entries.reduce((s,i) => s + i.qty, 0);
-  document.getElementById('cartCount').textContent = count;
-  document.getElementById('cartTotal').textContent = fmt(total);
-  const el = document.getElementById('cartItems');
-  if (!entries.length) {
-    el.innerHTML = `<div class="cart-empty"><span>🌿</span><p>Carrinho vazio.<br>Adicione produtos!</p></div>`;
-    return;
-  }
-  el.innerHTML = entries.map(i => `
-    <div class="cart-item">
-      <div class="ci-emoji">${i.emoji}</div>
-      <div class="ci-info">
-        <div class="ci-name">${i.name}</div>
-        <div class="ci-price">${fmt(i.price * i.qty)}</div>
-      </div>
-      <div class="ci-ctrl">
-        <button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button>
-        <span class="qty-n">${i.qty}</span>
-        <button class="qty-btn" onclick="changeQty(${i.id},1)">+</button>
-      </div>
-    </div>`).join('');
+function changeQtySelector(id,delta){
+  const input=document.getElementById('qsinput-'+id); if(!input) return;
+  input.value=Math.max(1,Math.min(99,(parseInt(input.value)||1)+delta));
 }
-
-function changeQty(id, d) {
-  if (!cart[id]) return;
-  cart[id].qty += d;
-  if (cart[id].qty <= 0) delete cart[id];
-  updateUI();
+function addToCart(id,cat){
+  const p=products[cat].find(p=>p.id===id); if(!p||p.avail==='out') return;
+  const qty=parseInt(document.getElementById('qsinput-'+id)?.value)||1;
+  if(cart[id]){ cart[id].qty+=qty; } else { cart[id]={...p,qty}; }
+  const inp=document.getElementById('qsinput-'+id); if(inp) inp.value=1;
+  saveCart(); updateUI(); showToast(`${p.emoji} ${qty}x ${p.name} adicionado!`);
+  const btn=document.getElementById('btn-'+id);
+  if(btn){ btn.textContent='✓ Adicionado!'; btn.classList.add('added');
+    setTimeout(()=>{ btn.textContent='+ Adicionar ao Carrinho'; btn.classList.remove('added'); },1200); }
 }
-
-function openCart()  { document.getElementById('drawer').classList.add('open');  document.getElementById('overlay').classList.add('open'); }
-function closeCart() { document.getElementById('drawer').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
-
-function finalizar() {
-  const entries = Object.values(cart).filter(i => i.qty > 0);
-  if (!entries.length) { showToast('⚠️ Adicione produtos primeiro!'); return; }
-  const total = entries.reduce((s,i) => s + i.price * i.qty, 0);
-  let msg = `🌿 *Olá! Gostaria de fazer um pedido no Sítio Roda D'água:*\n\n`;
-  entries.forEach(i => msg += `${i.emoji} ${i.name} x${i.qty} — ${fmt(i.price * i.qty)}\n`);
-  msg += `\n💰 *Total: ${fmt(total)}*\n\n📦 Por favor, me informe sobre entrega ou retirada. Obrigado(a)!`;
+function fmt(v){ return 'R$ '+v.toFixed(2).replace('.',','); }
+function updateUI(){
+  const entries=Object.values(cart).filter(i=>i.qty>0);
+  const total=entries.reduce((s,i)=>s+i.price*i.qty,0);
+  const count=entries.reduce((s,i)=>s+i.qty,0);
+  document.getElementById('cartCount').textContent=count;
+  document.getElementById('cartTotal').textContent=fmt(total);
+  const el=document.getElementById('cartItems');
+  if(!entries.length){ el.innerHTML=`<div class="cart-empty"><span>🌿</span><p>Carrinho vazio.<br>Adicione produtos!</p></div>`; return; }
+  el.innerHTML=entries.map(i=>`<div class="cart-item">
+    <div class="ci-emoji">${i.emoji}</div>
+    <div class="ci-info"><div class="ci-name">${i.name}</div><div class="ci-price">${fmt(i.price*i.qty)}</div></div>
+    <div class="ci-ctrl">
+      <button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button>
+      <span class="qty-n">${i.qty}</span>
+      <button class="qty-btn" onclick="changeQty(${i.id},1)">+</button>
+    </div></div>`).join('');
+}
+function changeQty(id,d){
+  if(!cart[id]) return;
+  cart[id].qty+=d;
+  if(cart[id].qty<=0) delete cart[id];
+  saveCart(); updateUI();
+}
+function openCart(){ document.getElementById('drawer').classList.add('open'); document.getElementById('overlay').classList.add('open'); }
+function closeCart(){ document.getElementById('drawer').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
+function finalizar(){
+  const entries=Object.values(cart).filter(i=>i.qty>0);
+  if(!entries.length){ showToast('⚠️ Adicione produtos primeiro!'); return; }
+  const total=entries.reduce((s,i)=>s+i.price*i.qty,0);
+  if(total<20){ showToast('⚠️ Pedido mínimo: R$ 20,00'); return; }
+  let msg=`🌿 *Olá! Gostaria de fazer um pedido no Sítio Roda D'água:*\n\n`;
+  entries.forEach(i=>msg+=`${i.emoji} ${i.name} x${i.qty} — ${fmt(i.price*i.qty)}\n`);
+  msg+=`\n💰 *Total: ${fmt(total)}*\n\n📦 Por favor, me informe sobre entrega ou retirada. Obrigado(a)!`;
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
 }
+function openWhatsApp(){ window.open(`https://wa.me/${WA}?text=${encodeURIComponent("🌿 Olá! Vim pelo site do Sítio Roda D'água e gostaria de mais informações!")}`, '_blank'); }
+function showToast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2500); }
 
-function openWhatsApp() {
-  window.open(`https://wa.me/${WA}?text=${encodeURIComponent("🌿 Olá! Vim pelo site do Sítio Roda D'água e gostaria de mais informações!")}`, '_blank');
+// ── DEPOIMENTOS — LER DO GITHUB ────────────────
+async function loadReviews(){
+  try {
+    const res = await fetch(RAW_URL + '?t=' + Date.now());
+    const data = await res.json();
+    renderReviews(data.reviews || []);
+  } catch(e) {
+    document.getElementById('depGrid').innerHTML = '<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
+  }
 }
 
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2500);
+function renderReviews(reviews){
+  const grid = document.getElementById('depGrid');
+  if(!reviews.length){
+    grid.innerHTML = '<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
+    return;
+  }
+  grid.innerHTML = reviews.slice().reverse().map(r => {
+    const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+    const initial = r.name ? r.name.charAt(0).toUpperCase() : '?';
+    return `<div class="dep-card">
+      <div class="dep-stars" style="color:#f5a623">${stars}</div>
+      <p class="dep-text">"${r.comment}"</p>
+      <div class="dep-author">
+        <div class="dep-avatar">${initial}</div>
+        <div>
+          <div class="dep-name">${r.name}</div>
+          <div class="dep-local">📍 ${r.city}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 }
+
+// ── DEPOIMENTOS — ENVIAR AO GITHUB ────────────
+let selectedStars = 0;
+
+document.getElementById('starSelect').querySelectorAll('span').forEach(s => {
+  s.addEventListener('click', () => {
+    selectedStars = parseInt(s.dataset.v);
+    document.querySelectorAll('#starSelect span').forEach((el,i) => {
+      el.classList.toggle('active', i < selectedStars);
+    });
+  });
+});
+
+async function submitReview(){
+  const name    = document.getElementById('rf-name').value.trim();
+  const city    = document.getElementById('rf-city').value.trim();
+  const comment = document.getElementById('rf-comment').value.trim();
+
+  if(!name)    { showToast('⚠️ Digite seu nome!');       return; }
+  if(!city)    { showToast('⚠️ Digite sua cidade!');     return; }
+  if(!selectedStars){ showToast('⚠️ Selecione uma nota!'); return; }
+  if(!comment) { showToast('⚠️ Escreva um comentário!'); return; }
+
+  const btn = document.getElementById('rfBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Enviando...';
+
+  try {
+    // 1. Buscar arquivo atual + SHA
+    const getRes = await fetch(API_URL, {
+      headers: { 'Authorization': 'Bearer ' + GH_TOKEN }
+    });
+    const getJson = await getRes.json();
+    const sha = getJson.sha;
+    const existing = JSON.parse(atob(getJson.content.replace(/\n/g,'')));
+
+    // 2. Adicionar novo depoimento
+    const newReview = {
+      id: Date.now().toString(),
+      name, city,
+      rating: selectedStars,
+      comment,
+      date: new Date().toISOString().split('T')[0]
+    };
+    existing.reviews.push(newReview);
+
+    // 3. Salvar no GitHub
+    const putRes = await fetch(API_URL, {
+      method: 'PUT',
+      headers: {
+        'Authorization': 'Bearer ' + GH_TOKEN,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Novo depoimento de ${name}`,
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(existing, null, 2)))),
+        sha
+      })
+    });
+
+    if(!putRes.ok) throw new Error('Erro ao salvar');
+
+    // 4. Atualizar tela
+    renderReviews(existing.reviews);
+    document.getElementById('rf-name').value = '';
+    document.getElementById('rf-city').value = '';
+    document.getElementById('rf-comment').value = '';
+    selectedStars = 0;
+    document.querySelectorAll('#starSelect span').forEach(el => el.classList.remove('active'));
+    document.getElementById('rfSuccess').style.display = 'block';
+    setTimeout(() => document.getElementById('rfSuccess').style.display = 'none', 4000);
+
+  } catch(e) {
+    showToast('❌ Erro ao enviar. Tente novamente.');
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '💚 Enviar Depoimento';
+}
+
+// ── INIT ───────────────────────────────────────
+loadCart();
+updateUI();
+loadReviews();
 </script>
 </body>
 </html>
