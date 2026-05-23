@@ -8,20 +8,15 @@
   <meta property="og:title"       content="Sítio Roda D'água 🌿"/>
   <meta property="og:description" content="Flores, legumes, rosquinhas artesanais e bolos caseiros direto do sítio em Caxambu – MG."/>
   <meta property="og:image"       content="https://labremotodeivid-coder.github.io/Sitio-Roda-D--gua/sitio_capa.png"/>
+  <meta property="og:url"         content="https://labremotodeivid-coder.github.io/Sitio-Roda-D--gua/"/>
   <meta name="description"        content="Flores, legumes, rosquinhas artesanais e bolos caseiros direto do sítio em Caxambu – MG."/>
-  <meta property="og:url" content="https://labremotodeivid-coder.github.io/Sitio-Roda-D--gua/"/>
-  <meta name="theme-color" content="#2d5016"/>
+  <meta name="theme-color"        content="#2d5016"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --verde:#2d5016; --verde-m:#4a7c2f; --verde-c:#7ab648;
-      --bege:#f5efe0; --bege2:#e8dcc8; --marrom:#8b5e3c;
-      --marrom-c:#c9956a; --branco:#fdfaf4;
-    }
+    :root{--verde:#2d5016;--verde-m:#4a7c2f;--verde-c:#7ab648;--bege:#f5efe0;--bege2:#e8dcc8;--marrom:#8b5e3c;--marrom-c:#c9956a;--branco:#fdfaf4;}
     *{margin:0;padding:0;box-sizing:border-box;}
     html{scroll-behavior:smooth;}
     body{font-family:'Lato',sans-serif;background:var(--branco);color:#2c2c2c;}
-
     header{background:var(--verde);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(0,0,0,0.35);}
     .logo{display:flex;align-items:center;gap:10px;}
     .logo-text{font-family:'Playfair Display',serif;color:var(--bege);font-size:18px;line-height:1.2;}
@@ -29,7 +24,6 @@
     .cart-btn{background:var(--verde-c);color:white;border:none;padding:10px 16px;border-radius:30px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px;transition:background 0.3s;}
     .cart-btn:hover{background:var(--marrom);}
     .cart-count{background:white;color:var(--verde);border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
-
     .hero{position:relative;height:88vw;max-height:480px;overflow:hidden;}
     .hero-img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
     .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,30,5,0.3) 0%,rgba(10,30,5,0.75) 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:28px 20px;text-align:center;}
@@ -39,13 +33,11 @@
     .hero p{color:rgba(255,255,255,0.88);font-size:14px;margin-bottom:22px;font-weight:300;}
     .btn-hero{background:white;color:var(--verde);border:none;padding:12px 30px;border-radius:50px;font-weight:700;font-size:14px;cursor:pointer;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,0,0,0.25);}
     .btn-hero:hover{background:var(--bege);transform:translateY(-2px);}
-
     .sec-title{text-align:center;padding:40px 20px 8px;}
     .sec-title h2{font-family:'Playfair Display',serif;font-size:26px;color:var(--verde);}
     .divider{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:8px;}
     .divider::before,.divider::after{content:'';width:50px;height:1px;background:var(--marrom-c);}
     .divider span{color:var(--verde-c);font-size:16px;}
-
     .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:860px;margin:16px auto 0;padding:0 16px;}
     @media(max-width:400px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
     .cat-block{border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,0.1);cursor:pointer;transition:transform 0.3s,box-shadow 0.3s;}
@@ -56,7 +48,6 @@
     .cat-block.open .cat-header img,.cat-block:hover .cat-header img{transform:scale(1.05);}
     .cat-header-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,30,5,0.05) 0%,rgba(10,30,5,0.75) 100%);display:flex;align-items:flex-end;justify-content:center;padding:10px 10px 12px;}
     .cat-name{font-family:'Playfair Display',serif;color:white;font-size:13px;text-align:center;text-shadow:0 1px 6px rgba(0,0,0,0.5);}
-
     .products-panel{max-width:860px;margin:0 auto;padding:0 16px;overflow:hidden;max-height:0;transition:max-height 0.45s cubic-bezier(0.25,0.46,0.45,0.94);}
     .products-panel.open{max-height:1600px;}
     .products-panel-inner{background:white;border-radius:0 0 18px 18px;border:1.5px solid var(--bege2);border-top:none;padding:16px;margin-bottom:24px;}
@@ -71,6 +62,7 @@
     .avail-ok{background:#e8f5e9;color:#2d6a2d;}
     .avail-low{background:#fff3e0;color:#b85c00;}
     .avail-out{background:#fbe9e7;color:#b71c1c;}
+    .stock-count{font-size:11px;color:#999;margin-bottom:4px;}
     .product-info{padding:8px 12px 12px;}
     .product-name{font-family:'Playfair Display',serif;font-size:13px;color:var(--verde);margin-bottom:4px;line-height:1.3;}
     .product-price{color:var(--marrom);font-weight:700;font-size:15px;margin-bottom:8px;}
@@ -83,8 +75,6 @@
     .add-btn:hover{background:var(--verde);}
     .add-btn.added{background:var(--marrom);}
     .add-btn:disabled{background:#ccc;cursor:not-allowed;}
-
-    /* ── DEPOIMENTOS ── */
     .depoimentos{background:var(--bege);padding:48px 20px;}
     .dep-inner{max-width:860px;margin:0 auto;}
     .dep-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;}
@@ -97,8 +87,6 @@
     .dep-name{font-weight:700;font-size:13px;color:var(--verde);}
     .dep-local{font-size:11px;color:#999;}
     .dep-loading{text-align:center;padding:32px;color:#aaa;font-size:14px;}
-
-    /* ── FORMULÁRIO DE DEPOIMENTO ── */
     .review-form-wrap{max-width:560px;margin:28px auto 0;background:white;border-radius:18px;border:1.5px solid var(--bege2);padding:24px;box-shadow:0 2px 10px rgba(0,0,0,0.06);}
     .review-form-wrap h3{font-family:'Playfair Display',serif;color:var(--verde);font-size:18px;margin-bottom:4px;}
     .review-form-wrap p{font-size:13px;color:#888;margin-bottom:16px;}
@@ -117,7 +105,6 @@
     .rf-submit:hover{background:var(--verde);}
     .rf-submit:disabled{background:#aaa;cursor:not-allowed;}
     .rf-success{text-align:center;padding:20px;color:var(--verde);font-weight:700;font-size:15px;display:none;}
-
     .sobre{padding:48px 20px;}
     .sobre-inner{max-width:600px;margin:0 auto;text-align:center;}
     .sobre-icon{font-size:52px;margin-bottom:16px;}
@@ -125,7 +112,6 @@
     .sobre p{color:#555;font-size:15px;line-height:1.8;margin-bottom:12px;}
     .sobre-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px;}
     .sobre-tag{background:var(--bege);border:1.5px solid var(--bege2);color:var(--verde);padding:7px 16px;border-radius:30px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;}
-
     .como{background:var(--bege);padding:40px 20px;text-align:center;}
     .steps{display:flex;justify-content:center;gap:8px;margin-top:24px;flex-wrap:wrap;}
     .step{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;min-width:65px;}
@@ -138,16 +124,13 @@
     .ei-label{font-size:11px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
     .ei-val{font-size:13px;color:var(--verde);font-weight:700;margin-top:2px;line-height:1.4;}
     @media(max-width:400px){.entrega-info{grid-template-columns:1fr;}}
-
     .banner{background:var(--verde);padding:40px 20px;text-align:center;}
     .banner h2{font-family:'Playfair Display',serif;color:white;font-size:24px;margin-bottom:8px;}
     .banner p{color:rgba(255,255,255,0.7);margin-bottom:22px;font-size:14px;}
     .wa-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;padding:13px 26px;border-radius:50px;font-weight:700;font-size:15px;border:none;cursor:pointer;transition:background 0.3s;}
     .wa-btn:hover{background:#128C7E;}
-
     footer{background:#1a2f0a;padding:20px;text-align:center;color:rgba(255,255,255,0.45);font-size:12px;line-height:1.8;}
     footer a{color:var(--verde-c);text-decoration:none;}
-
     .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;}
     .overlay.open{display:block;}
     .drawer{position:fixed;right:-100%;top:0;bottom:0;width:min(360px,100%);background:var(--branco);z-index:300;display:flex;flex-direction:column;transition:right 0.4s cubic-bezier(0.25,0.46,0.45,0.94);box-shadow:-4px 0 30px rgba(0,0,0,0.15);}
@@ -168,9 +151,11 @@
     .qty-btn:hover{background:var(--verde-m);color:white;}
     .qty-n{font-weight:700;font-size:15px;min-width:20px;text-align:center;}
     .drawer-foot{padding:16px 20px 24px;border-top:2px solid var(--bege2);}
-    .cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+    .cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
     .cart-total span:first-child{font-size:15px;color:#666;}
     .cart-total span:last-child{font-family:'Playfair Display',serif;font-size:22px;color:var(--verde);font-weight:700;}
+    .limpar-btn{width:100%;background:none;border:1.5px solid #ddd;color:#999;padding:10px;border-radius:11px;font-family:'Lato',sans-serif;font-weight:700;font-size:13px;cursor:pointer;margin-bottom:10px;transition:all 0.2s;}
+    .limpar-btn:hover{border-color:var(--marrom-c);color:var(--marrom);}
     .finalizar-btn{width:100%;background:#25D366;color:white;border:none;padding:15px;border-radius:13px;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.3s;}
     .finalizar-btn:hover{background:#128C7E;}
     .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--verde);color:white;padding:11px 22px;border-radius:30px;font-size:14px;font-weight:700;z-index:999;transition:transform 0.3s;pointer-events:none;white-space:nowrap;}
@@ -234,46 +219,29 @@
   </div>
 </div>
 
-<!-- DEPOIMENTOS -->
 <section class="depoimentos" id="depoimentos">
   <div class="dep-inner">
     <div class="sec-title" style="padding-top:0">
       <h2>O que nossos clientes dizem</h2>
       <div class="divider"><span>💚</span></div>
     </div>
-
     <div class="dep-grid" id="depGrid">
       <div class="dep-loading">🌿 Carregando depoimentos...</div>
     </div>
-
-    <!-- Formulário para enviar depoimento -->
     <div class="review-form-wrap">
       <h3>✍️ Deixe seu depoimento</h3>
       <p>Conte como foi sua experiência com o Sítio Roda D'água!</p>
       <div class="rf-row">
-        <div class="rf-field">
-          <label>Seu nome</label>
-          <input type="text" id="rf-name" placeholder="Ex: Maria S." maxlength="40"/>
-        </div>
-        <div class="rf-field">
-          <label>Cidade</label>
-          <input type="text" id="rf-city" placeholder="Ex: Caxambu – MG" maxlength="40"/>
-        </div>
+        <div class="rf-field"><label>Seu nome</label><input type="text" id="rf-name" placeholder="Ex: Maria S." maxlength="40"/></div>
+        <div class="rf-field"><label>Cidade</label><input type="text" id="rf-city" placeholder="Ex: Caxambu – MG" maxlength="40"/></div>
       </div>
       <div class="rf-field" style="margin-bottom:10px">
         <label>Nota</label>
         <div class="star-select" id="starSelect">
-          <span data-v="1">⭐</span>
-          <span data-v="2">⭐</span>
-          <span data-v="3">⭐</span>
-          <span data-v="4">⭐</span>
-          <span data-v="5">⭐</span>
+          <span data-v="1">⭐</span><span data-v="2">⭐</span><span data-v="3">⭐</span><span data-v="4">⭐</span><span data-v="5">⭐</span>
         </div>
       </div>
-      <div class="rf-field">
-        <label>Comentário</label>
-        <textarea id="rf-comment" placeholder="Conte sua experiência..." maxlength="300"></textarea>
-      </div>
+      <div class="rf-field"><label>Comentário</label><textarea id="rf-comment" placeholder="Conte sua experiência..." maxlength="300"></textarea></div>
       <button class="rf-submit" id="rfBtn" onclick="submitReview()">💚 Enviar Depoimento</button>
       <div class="rf-success" id="rfSuccess">✅ Depoimento enviado! Obrigado(a) 🌿</div>
     </div>
@@ -298,10 +266,7 @@
 </section>
 
 <section class="como">
-  <div class="sec-title" style="padding-top:0">
-    <h2>Como Funciona?</h2>
-    <div class="divider"><span>💚</span></div>
-  </div>
+  <div class="sec-title" style="padding-top:0"><h2>Como Funciona?</h2><div class="divider"><span>💚</span></div></div>
   <div class="steps">
     <div class="step"><div class="step-icon">📱</div><p>Escaneie o QR Code</p></div>
     <div class="step-arrow">→</div>
@@ -312,7 +277,7 @@
     <div class="step"><div class="step-icon">🚚</div><p>Combine a entrega</p></div>
   </div>
   <div class="entrega-info">
-    <div class="ei-item"><div class="ei-icon">📅</div><div><div class="ei-label">Dias de entrega</div><div class="ei-val">Segunda a Sexta</div></div></div>
+    <div class="ei-item"><div class="ei-icon">📅</div><div><div class="ei-label">Dias de entrega</div><div class="ei-val">Terças e Sextas</div></div></div>
     <div class="ei-item"><div class="ei-icon">⏰</div><div><div class="ei-label">Pedido até</div><div class="ei-val">1 dia antes</div></div></div>
     <div class="ei-item"><div class="ei-icon">🚚</div><div><div class="ei-label">Frete</div><div class="ei-val">A combinar<br><span style="font-size:11px;font-weight:400;color:#888">Retirada no sítio: grátis</span></div></div></div>
     <div class="ei-item"><div class="ei-icon">🛍️</div><div><div class="ei-label">Pedido mínimo</div><div class="ei-val">R$ 20,00</div></div></div>
@@ -344,116 +309,173 @@
   </div>
   <div class="drawer-foot">
     <div class="cart-total"><span>Total:</span><span id="cartTotal">R$ 0,00</span></div>
+    <button class="limpar-btn" onclick="limparCarrinho()">🗑️ Esvaziar Carrinho</button>
     <button class="finalizar-btn" onclick="finalizar()">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       Finalizar Pedido via WhatsApp
     </button>
   </div>
 </div>
-
 <div class="toast" id="toast"></div>
 
 <script>
-// ── CONFIG GITHUB ──────────────────────────────
-const GH_TOKEN = 'github_pat_11CAWPK4Q0JwsumUrDtE71_awTV7P5P7X'+'TwucDGkEE30zDEnmEY9WGnE1OqcfSzxxG5ZAJZE6C5aIr2nC4';
-const GH_REPO  = 'labremotodeivid-coder/Sitio-Roda-D--gua';
-const GH_FILE  = 'js.delivrs/reviews.json';
-const RAW_URL  = `https://raw.githubusercontent.com/${GH_REPO}/main/${GH_FILE}`;
-const API_URL  = `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`;
-const WA       = '5535991390223';
+// ── CONFIG ─────────────────────────────────────
+const GH_TOKEN   = 'github_pat_11CAWPK4Q0JwsumUrDtE71_awTV7P5P7X'+'TwucDGkEE30zDEnmEY9WGnE1OqcfSzxxG5ZAJZE6C5aIr2nC4';
+const GH_REPO    = 'labremotodeivid-coder/Sitio-Roda-D--gua';
+const STOCK_FILE = 'js.delivrs/stock.json';
+const REV_FILE   = 'js.delivrs/reviews.json';
+const RAW        = `https://raw.githubusercontent.com/${GH_REPO}/main`;
+const API        = `https://api.github.com/repos/${GH_REPO}/contents`;
+const WA         = '5535991390223';
 
 // ── PRODUTOS ───────────────────────────────────
 const products = {
   flores:[
-    {id:1, name:'Vaso de Girassol', price:15, emoji:'🌻', bg:'#fff8e1', avail:'ok'},
-    {id:2, name:'Vaso de Lavanda',  price:12, emoji:'💜', bg:'#f3e8ff', avail:'low'},
-    {id:3, name:'Arranjo Misto',    price:25, emoji:'🌸', bg:'#fce4f0', avail:'ok'},
+    {id:1,name:'Vaso de Girassol',price:15,emoji:'🌻',bg:'#fff8e1'},
+    {id:2,name:'Vaso de Lavanda', price:12,emoji:'💜',bg:'#f3e8ff'},
+    {id:3,name:'Arranjo Misto',   price:25,emoji:'🌸',bg:'#fce4f0'},
   ],
   legumes:[
-    {id:4, name:'Alface',    price:4, emoji:'🥬', bg:'#e8f8e8', avail:'ok'},
-    {id:5, name:'Tomate',    price:6, emoji:'🍅', bg:'#fdecea', avail:'ok'},
-    {id:6, name:'Cenoura',   price:5, emoji:'🥕', bg:'#fff3e0', avail:'low'},
-    {id:7, name:'Abobrinha', price:5, emoji:'🥒', bg:'#e8f5e9', avail:'out'},
+    {id:4,name:'Alface',   price:4,emoji:'🥬',bg:'#e8f8e8'},
+    {id:5,name:'Tomate',   price:6,emoji:'🍅',bg:'#fdecea'},
+    {id:6,name:'Cenoura',  price:5,emoji:'🥕',bg:'#fff3e0'},
+    {id:7,name:'Abobrinha',price:5,emoji:'🥒',bg:'#e8f5e9'},
   ],
   rosquinhas:[
-    {id:8,  name:'Rosquinha de Polvilho', price:12, emoji:'🍩', bg:'#fff8e1', avail:'ok'},
-    {id:9,  name:'Rosquinha de Queijo',   price:14, emoji:'🧀', bg:'#fffde7', avail:'ok'},
-    {id:10, name:'Rosquinha de Canela',   price:12, emoji:'🍪', bg:'#fbe9e7', avail:'low'},
+    {id:8, name:'Rosquinha de Polvilho',price:12,emoji:'🍩',bg:'#fff8e1'},
+    {id:9, name:'Rosquinha de Queijo',  price:14,emoji:'🧀',bg:'#fffde7'},
+    {id:10,name:'Rosquinha de Canela',  price:12,emoji:'🍪',bg:'#fbe9e7'},
   ],
   bolos:[
-    {id:11, name:'Bolo de Fubá',   price:30, emoji:'🎂', bg:'#fff8e1', avail:'ok'},
-    {id:12, name:'Bolo de Milho',  price:30, emoji:'🌽', bg:'#fffde7', avail:'ok'},
-    {id:13, name:'Bolo de Banana', price:28, emoji:'🍌', bg:'#f9fbe7', avail:'out'},
+    {id:11,name:'Bolo de Fubá',  price:30,emoji:'🎂',bg:'#fff8e1'},
+    {id:12,name:'Bolo de Milho', price:30,emoji:'🌽',bg:'#fffde7'},
+    {id:13,name:'Bolo de Banana',price:28,emoji:'🍌',bg:'#f9fbe7'},
   ]
 };
-const availLabel = {
-  ok: {cls:'avail-ok', txt:'✅ Disponível'},
-  low:{cls:'avail-low',txt:'⚡ Últimas unidades'},
-  out:{cls:'avail-out',txt:'❌ Fora de temporada'},
-};
-const catInfo = {
+const catInfo={
   flores:    {title:'Flores',            emoji:'🌸'},
   legumes:   {title:'Legumes & Verduras', emoji:'🥬'},
   rosquinhas:{title:'Rosquinhas',         emoji:'🍪'},
   bolos:     {title:'Bolos',              emoji:'🎂'},
 };
 
+// ── ESTOQUE ────────────────────────────────────
+let stock = {};
+
+async function loadStock(){
+  try{
+    const res = await fetch(`${RAW}/${STOCK_FILE}?t=${Date.now()}`);
+    const data = await res.json();
+    stock = data.stock || {};
+  }catch(e){ stock={}; }
+}
+
+function getAvail(id){
+  const qty = stock[String(id)];
+  if(qty === undefined) return {cls:'avail-ok', txt:'✅ Disponível', qty: null, out: false};
+  if(qty <= 0)  return {cls:'avail-out', txt:'❌ Indisponível', qty:0, out:true};
+  if(qty < 3)   return {cls:'avail-low', txt:'⚡ Últimas unidades', qty, out:false};
+  return          {cls:'avail-ok',  txt:'✅ Disponível', qty, out:false};
+}
+
+async function decrementStock(cartItems){
+  try{
+    const res = await fetch(`${API}/${STOCK_FILE}`,{headers:{'Authorization':'Bearer '+GH_TOKEN}});
+    const info = await res.json();
+    const sha  = info.sha;
+    const data = JSON.parse(atob(info.content.replace(/\n/g,'')));
+
+    Object.values(cartItems).forEach(item=>{
+      const key = String(item.id);
+      if(data.stock[key] !== undefined){
+        data.stock[key] = Math.max(0, data.stock[key] - item.qty);
+      }
+    });
+
+    await fetch(`${API}/${STOCK_FILE}`,{
+      method:'PUT',
+      headers:{'Authorization':'Bearer '+GH_TOKEN,'Content-Type':'application/json'},
+      body: JSON.stringify({
+        message:'Atualizar estoque após pedido',
+        content: btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2)))),
+        sha
+      })
+    });
+    stock = data.stock;
+  }catch(e){ console.warn('Erro ao atualizar estoque',e); }
+}
+
 // ── CARRINHO ───────────────────────────────────
-let cart = {};
-function saveCart(){ try{ localStorage.setItem('sitio_cart', JSON.stringify(cart)); }catch(e){} }
-function loadCart(){ try{ const r=localStorage.getItem('sitio_cart'); if(r) cart=JSON.parse(r); }catch(e){ cart={}; } }
+let cart={};
+function saveCart(){try{localStorage.setItem('sitio_cart',JSON.stringify(cart));}catch(e){}}
+function loadCart(){try{const r=localStorage.getItem('sitio_cart');if(r)cart=JSON.parse(r);}catch(e){cart={};}}
 
 // ── CATEGORIAS ─────────────────────────────────
-let openCat = null;
+let openCat=null;
 function toggleCat(cat){
-  const panel = document.getElementById('productsPanel');
-  const isSame = openCat === cat;
+  const panel=document.getElementById('productsPanel');
+  const isSame=openCat===cat;
   document.querySelectorAll('.cat-block').forEach(b=>b.classList.remove('open'));
-  if(isSame){ panel.classList.remove('open'); openCat=null; return; }
-  openCat = cat;
+  if(isSame){panel.classList.remove('open');openCat=null;return;}
+  openCat=cat;
   document.getElementById('block-'+cat).classList.add('open');
-  document.getElementById('panelEmoji').textContent = catInfo[cat].emoji;
-  document.getElementById('panelTitle').textContent = catInfo[cat].title;
+  document.getElementById('panelEmoji').textContent=catInfo[cat].emoji;
+  document.getElementById('panelTitle').textContent=catInfo[cat].title;
   renderProducts(cat);
   panel.classList.add('open');
   setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'nearest'}),80);
 }
+
 function renderProducts(cat){
-  document.getElementById('productsGrid').innerHTML = products[cat].map(p=>{
-    const av=availLabel[p.avail], isOut=p.avail==='out';
+  document.getElementById('productsGrid').innerHTML=products[cat].map(p=>{
+    const av=getAvail(p.id);
+    const qtyTxt = av.qty !== null ? `<div class="stock-count">📦 ${av.qty} disponíveis</div>` : '';
     return `<div class="product-card">
-      <div class="product-emoji-box" style="background:${p.bg};opacity:${isOut?0.6:1}">${p.emoji}</div>
+      <div class="product-emoji-box" style="background:${p.bg};opacity:${av.out?0.5:1}">${p.emoji}</div>
       <div class="product-info">
         <span class="avail-badge ${av.cls}">${av.txt}</span>
+        ${qtyTxt}
         <div class="product-name">${p.name}</div>
         <div class="product-price">R$ ${p.price.toFixed(2).replace('.',',')}</div>
-        ${isOut?'':
+        ${av.out?'':
         `<div class="qty-selector">
-          <button onclick="changeQtySelector(${p.id},-1)">−</button>
-          <input type="number" id="qsinput-${p.id}" value="1" min="1" max="99" readonly/>
-          <button onclick="changeQtySelector(${p.id},1)">+</button>
+          <button onclick="changeQtySelector(${p.id},-1,${av.qty})">−</button>
+          <input type="number" id="qsinput-${p.id}" value="1" min="1" max="${av.qty||99}" readonly/>
+          <button onclick="changeQtySelector(${p.id},1,${av.qty})">+</button>
         </div>`}
-        <button class="add-btn" id="btn-${p.id}" ${isOut?'disabled':''} onclick="addToCart(${p.id},'${cat}')">
-          ${isOut?'🚫 Indisponível':'+ Adicionar ao Carrinho'}
+        <button class="add-btn" id="btn-${p.id}" ${av.out?'disabled':''} onclick="addToCart(${p.id},'${cat}')">
+          ${av.out?'🚫 Indisponível':'+ Adicionar ao Carrinho'}
         </button>
       </div></div>`;
   }).join('');
 }
-function changeQtySelector(id,delta){
-  const input=document.getElementById('qsinput-'+id); if(!input) return;
-  input.value=Math.max(1,Math.min(99,(parseInt(input.value)||1)+delta));
+
+function changeQtySelector(id,delta,maxQty){
+  const input=document.getElementById('qsinput-'+id);if(!input)return;
+  const max = maxQty !== null ? maxQty : 99;
+  input.value=Math.max(1,Math.min(max,(parseInt(input.value)||1)+delta));
 }
+
 function addToCart(id,cat){
-  const p=products[cat].find(p=>p.id===id); if(!p||p.avail==='out') return;
+  const p=products[cat].find(p=>p.id===id);
+  if(!p)return;
+  const av=getAvail(id);
+  if(av.out){showToast('❌ Produto indisponível!');return;}
   const qty=parseInt(document.getElementById('qsinput-'+id)?.value)||1;
-  if(cart[id]){ cart[id].qty+=qty; } else { cart[id]={...p,qty}; }
-  const inp=document.getElementById('qsinput-'+id); if(inp) inp.value=1;
-  saveCart(); updateUI(); showToast(`${p.emoji} ${qty}x ${p.name} adicionado!`);
+  const noCarrinho=(cart[id]?.qty||0);
+  if(av.qty!==null && noCarrinho+qty > av.qty){
+    showToast(`⚠️ Apenas ${av.qty} disponíveis!`);return;
+  }
+  if(cart[id]){cart[id].qty+=qty;}else{cart[id]={...p,qty};}
+  const inp=document.getElementById('qsinput-'+id);if(inp)inp.value=1;
+  saveCart();updateUI();showToast(`${p.emoji} ${qty}x ${p.name} adicionado!`);
   const btn=document.getElementById('btn-'+id);
-  if(btn){ btn.textContent='✓ Adicionado!'; btn.classList.add('added');
-    setTimeout(()=>{ btn.textContent='+ Adicionar ao Carrinho'; btn.classList.remove('added'); },1200); }
+  if(btn){btn.textContent='✓ Adicionado!';btn.classList.add('added');
+    setTimeout(()=>{btn.textContent='+ Adicionar ao Carrinho';btn.classList.remove('added');},1200);}
 }
-function fmt(v){ return 'R$ '+v.toFixed(2).replace('.',','); }
+
+function fmt(v){return 'R$ '+v.toFixed(2).replace('.',',');}
+
 function updateUI(){
   const entries=Object.values(cart).filter(i=>i.qty>0);
   const total=entries.reduce((s,i)=>s+i.price*i.qty,0);
@@ -461,153 +483,130 @@ function updateUI(){
   document.getElementById('cartCount').textContent=count;
   document.getElementById('cartTotal').textContent=fmt(total);
   const el=document.getElementById('cartItems');
-  if(!entries.length){ el.innerHTML=`<div class="cart-empty"><span>🌿</span><p>Carrinho vazio.<br>Adicione produtos!</p></div>`; return; }
-  el.innerHTML=entries.map(i=>`<div class="cart-item">
-    <div class="ci-emoji">${i.emoji}</div>
-    <div class="ci-info"><div class="ci-name">${i.name}</div><div class="ci-price">${fmt(i.price*i.qty)}</div></div>
-    <div class="ci-ctrl">
-      <button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button>
-      <span class="qty-n">${i.qty}</span>
-      <button class="qty-btn" onclick="changeQty(${i.id},1)">+</button>
-    </div></div>`).join('');
+  if(!entries.length){
+    el.innerHTML=`<div class="cart-empty"><span>🌿</span><p>Carrinho vazio.<br>Adicione produtos!</p></div>`;
+    return;
+  }
+  el.innerHTML=entries.map(i=>`
+    <div class="cart-item">
+      <div class="ci-emoji">${i.emoji}</div>
+      <div class="ci-info"><div class="ci-name">${i.name}</div><div class="ci-price">${fmt(i.price*i.qty)}</div></div>
+      <div class="ci-ctrl">
+        <button class="qty-btn" onclick="changeQty(${i.id},-1)">−</button>
+        <span class="qty-n">${i.qty}</span>
+        <button class="qty-btn" onclick="changeQty(${i.id},1)">+</button>
+      </div>
+    </div>`).join('');
 }
+
 function changeQty(id,d){
-  if(!cart[id]) return;
+  if(!cart[id])return;
   cart[id].qty+=d;
-  if(cart[id].qty<=0) delete cart[id];
-  saveCart(); updateUI();
+  if(cart[id].qty<=0)delete cart[id];
+  saveCart();updateUI();
 }
-function openCart(){ document.getElementById('drawer').classList.add('open'); document.getElementById('overlay').classList.add('open'); }
-function closeCart(){ document.getElementById('drawer').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
-function finalizar(){
+
+function limparCarrinho(){
+  if(!Object.keys(cart).length){showToast('⚠️ Carrinho já está vazio!');return;}
+  cart={};saveCart();updateUI();showToast('🗑️ Carrinho esvaziado!');
+}
+
+function openCart(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open');}
+function closeCart(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open');}
+
+async function finalizar(){
   const entries=Object.values(cart).filter(i=>i.qty>0);
-  if(!entries.length){ showToast('⚠️ Adicione produtos primeiro!'); return; }
+  if(!entries.length){showToast('⚠️ Adicione produtos primeiro!');return;}
   const total=entries.reduce((s,i)=>s+i.price*i.qty,0);
-  if(total<20){ showToast('⚠️ Pedido mínimo: R$ 20,00'); return; }
+  if(total<20){showToast('⚠️ Pedido mínimo: R$ 20,00');return;}
   let msg=`🌿 *Olá! Gostaria de fazer um pedido no Sítio Roda D'água:*\n\n`;
   entries.forEach(i=>msg+=`${i.emoji} ${i.name} x${i.qty} — ${fmt(i.price*i.qty)}\n`);
   msg+=`\n💰 *Total: ${fmt(total)}*\n\n📦 Por favor, me informe sobre entrega ou retirada. Obrigado(a)!`;
-  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,'_blank');
+  // Diminui estoque ao finalizar
+  await decrementStock(cart);
+  // Atualiza display se categoria estiver aberta
+  if(openCat) renderProducts(openCat);
 }
-function openWhatsApp(){ window.open(`https://wa.me/${WA}?text=${encodeURIComponent("🌿 Olá! Vim pelo site do Sítio Roda D'água e gostaria de mais informações!")}`, '_blank'); }
-function showToast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2500); }
 
-// ── DEPOIMENTOS — LER DO GITHUB ────────────────
+function openWhatsApp(){window.open(`https://wa.me/${WA}?text=${encodeURIComponent("🌿 Olá! Vim pelo site do Sítio Roda D'água e gostaria de mais informações!")}`,'_blank');}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+
+// ── DEPOIMENTOS ────────────────────────────────
 async function loadReviews(){
-  try {
-    const res = await fetch(RAW_URL + '?t=' + Date.now());
-    const data = await res.json();
-    renderReviews(data.reviews || []);
-  } catch(e) {
-    document.getElementById('depGrid').innerHTML = '<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
+  try{
+    const res=await fetch(`${RAW}/${REV_FILE}?t=${Date.now()}`);
+    const data=await res.json();
+    renderReviews(data.reviews||[]);
+  }catch(e){
+    document.getElementById('depGrid').innerHTML='<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
   }
 }
 
 function renderReviews(reviews){
-  const grid = document.getElementById('depGrid');
+  const grid=document.getElementById('depGrid');
   if(!reviews.length){
-    grid.innerHTML = '<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
+    grid.innerHTML='<div class="dep-loading">Nenhum depoimento ainda. Seja o primeiro! 🌿</div>';
     return;
   }
-  grid.innerHTML = reviews.slice().reverse().map(r => {
-    const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
-    const initial = r.name ? r.name.charAt(0).toUpperCase() : '?';
+  grid.innerHTML=reviews.slice().reverse().map(r=>{
+    const stars='★'.repeat(r.rating)+'☆'.repeat(5-r.rating);
     return `<div class="dep-card">
-      <div class="dep-stars" style="color:#f5a623">${stars}</div>
+      <div class="dep-stars">${stars}</div>
       <p class="dep-text">"${r.comment}"</p>
       <div class="dep-author">
-        <div class="dep-avatar">${initial}</div>
-        <div>
-          <div class="dep-name">${r.name}</div>
-          <div class="dep-local">📍 ${r.city}</div>
-        </div>
-      </div>
-    </div>`;
+        <div class="dep-avatar">${r.name.charAt(0).toUpperCase()}</div>
+        <div><div class="dep-name">${r.name}</div><div class="dep-local">📍 ${r.city}</div></div>
+      </div></div>`;
   }).join('');
 }
 
-// ── DEPOIMENTOS — ENVIAR AO GITHUB ────────────
-let selectedStars = 0;
-
-document.getElementById('starSelect').querySelectorAll('span').forEach(s => {
-  s.addEventListener('click', () => {
-    selectedStars = parseInt(s.dataset.v);
-    document.querySelectorAll('#starSelect span').forEach((el,i) => {
-      el.classList.toggle('active', i < selectedStars);
-    });
+let selectedStars=0;
+document.getElementById('starSelect').querySelectorAll('span').forEach(s=>{
+  s.addEventListener('click',()=>{
+    selectedStars=parseInt(s.dataset.v);
+    document.querySelectorAll('#starSelect span').forEach((el,i)=>el.classList.toggle('active',i<selectedStars));
   });
 });
 
 async function submitReview(){
-  const name    = document.getElementById('rf-name').value.trim();
-  const city    = document.getElementById('rf-city').value.trim();
-  const comment = document.getElementById('rf-comment').value.trim();
-
-  if(!name)    { showToast('⚠️ Digite seu nome!');       return; }
-  if(!city)    { showToast('⚠️ Digite sua cidade!');     return; }
-  if(!selectedStars){ showToast('⚠️ Selecione uma nota!'); return; }
-  if(!comment) { showToast('⚠️ Escreva um comentário!'); return; }
-
-  const btn = document.getElementById('rfBtn');
-  btn.disabled = true;
-  btn.textContent = '⏳ Enviando...';
-
-  try {
-    // 1. Buscar arquivo atual + SHA
-    const getRes = await fetch(API_URL, {
-      headers: { 'Authorization': 'Bearer ' + GH_TOKEN }
+  const name=document.getElementById('rf-name').value.trim();
+  const city=document.getElementById('rf-city').value.trim();
+  const comment=document.getElementById('rf-comment').value.trim();
+  if(!name){showToast('⚠️ Digite seu nome!');return;}
+  if(!city){showToast('⚠️ Digite sua cidade!');return;}
+  if(!selectedStars){showToast('⚠️ Selecione uma nota!');return;}
+  if(!comment){showToast('⚠️ Escreva um comentário!');return;}
+  const btn=document.getElementById('rfBtn');
+  btn.disabled=true;btn.textContent='⏳ Enviando...';
+  try{
+    const getRes=await fetch(`${API}/${REV_FILE}`,{headers:{'Authorization':'Bearer '+GH_TOKEN}});
+    const getJson=await getRes.json();
+    const sha=getJson.sha;
+    const existing=JSON.parse(atob(getJson.content.replace(/\n/g,'')));
+    existing.reviews.push({id:Date.now().toString(),name,city,rating:selectedStars,comment,date:new Date().toISOString().split('T')[0]});
+    const putRes=await fetch(`${API}/${REV_FILE}`,{
+      method:'PUT',
+      headers:{'Authorization':'Bearer '+GH_TOKEN,'Content-Type':'application/json'},
+      body:JSON.stringify({message:`Novo depoimento de ${name}`,content:btoa(unescape(encodeURIComponent(JSON.stringify(existing,null,2)))),sha})
     });
-    const getJson = await getRes.json();
-    const sha = getJson.sha;
-    const existing = JSON.parse(atob(getJson.content.replace(/\n/g,'')));
-
-    // 2. Adicionar novo depoimento
-    const newReview = {
-      id: Date.now().toString(),
-      name, city,
-      rating: selectedStars,
-      comment,
-      date: new Date().toISOString().split('T')[0]
-    };
-    existing.reviews.push(newReview);
-
-    // 3. Salvar no GitHub
-    const putRes = await fetch(API_URL, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Bearer ' + GH_TOKEN,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        message: `Novo depoimento de ${name}`,
-        content: btoa(unescape(encodeURIComponent(JSON.stringify(existing, null, 2)))),
-        sha
-      })
-    });
-
-    if(!putRes.ok) throw new Error('Erro ao salvar');
-
-    // 4. Atualizar tela
+    if(!putRes.ok)throw new Error();
     renderReviews(existing.reviews);
-    document.getElementById('rf-name').value = '';
-    document.getElementById('rf-city').value = '';
-    document.getElementById('rf-comment').value = '';
-    selectedStars = 0;
-    document.querySelectorAll('#starSelect span').forEach(el => el.classList.remove('active'));
-    document.getElementById('rfSuccess').style.display = 'block';
-    setTimeout(() => document.getElementById('rfSuccess').style.display = 'none', 4000);
-
-  } catch(e) {
-    showToast('❌ Erro ao enviar. Tente novamente.');
-  }
-
-  btn.disabled = false;
-  btn.innerHTML = '💚 Enviar Depoimento';
+    document.getElementById('rf-name').value='';
+    document.getElementById('rf-city').value='';
+    document.getElementById('rf-comment').value='';
+    selectedStars=0;
+    document.querySelectorAll('#starSelect span').forEach(el=>el.classList.remove('active'));
+    document.getElementById('rfSuccess').style.display='block';
+    setTimeout(()=>document.getElementById('rfSuccess').style.display='none',4000);
+  }catch(e){showToast('❌ Erro ao enviar. Tente novamente.');}
+  btn.disabled=false;btn.innerHTML='💚 Enviar Depoimento';
 }
 
 // ── INIT ───────────────────────────────────────
 loadCart();
 updateUI();
+loadStock().then(()=>{ if(openCat) renderProducts(openCat); });
 loadReviews();
 </script>
 </body>
