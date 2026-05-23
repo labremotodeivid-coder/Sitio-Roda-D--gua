@@ -1,0 +1,28 @@
+{
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Marina S.",
+      "city": "Caxambu â MG",
+      "rating": 5,
+      "comment": "O bolo de fubÃ¡ Ã© incrÃ­vel, igual ao da minha avÃ³. Pedido chegou fresquinho e bem embalado!",
+      "date": "2026-05-23"
+    },
+    {
+      "id": "2",
+      "name": "Carla M.",
+      "city": "Baependi â MG",
+      "rating": 5,
+      "comment": "As flores do sÃ­tio duraram mais de duas semanas! LindÃ­ssimas e com perfume natural.",
+      "date": "2026-05-23"
+    },
+    {
+      "id": "1779509158962",
+      "name": "Sara L.",
+      "city": "Caxambu - MG",
+      "rating": 5,
+      "comment": "Foi muito bom, a rosquinha estava uma delicia e senti o amor em cada pedaço",
+      "date": "2026-05-23"
+    }
+  ]
+}
